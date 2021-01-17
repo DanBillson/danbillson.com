@@ -1,16 +1,29 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { normalize } from 'styled-normalize'
 
 const GlobalStyle = createGlobalStyle`
+  ${normalize}
+
+  html {
+    font-family: Karla, sans-serif;
+  }
   body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  p {
+    letter-spacing: 0.5px;
+    line-height: 1.6rem;
   }
 `
 
 const theme = {
   colors: {
-    primary: '#0070f3',
+    primary: '#00e4bd',
+    secondary: '#9865d5',
+    tertiary: '#fc0064',
+    fg: '#272727',
+    bg: '#fff',
   },
 }
 
