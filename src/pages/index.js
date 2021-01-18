@@ -4,10 +4,11 @@ import Header from '../components/header'
 import Hero from '../components/hero'
 import Grid from '../components/grid'
 import Event from '../components/event'
-import Footer from '../components/footer'
+import Preview from '../components/preview'
+import Box from '../components/box'
+import Social from '../components/social'
 
 export default function Home(props) {
-  console.log({ props })
   return (
     <div>
       <Header />
@@ -17,7 +18,14 @@ export default function Home(props) {
           <Event key={job.name} {...job} />
         ))}
       </Grid>
-      <Footer />
+      <Box>
+        <Grid title="Blog">
+          {props.blog.map((preview) => (
+            <Preview key={preview.title} {...preview} />
+          ))}
+        </Grid>
+        <Social />
+      </Box>
     </div>
   )
 }

@@ -1,9 +1,11 @@
 import styled from 'styled-components'
+
+import Box from './box'
 import Social from '../components/social'
 
 export default function Hero({ title, tagline, image }) {
   return (
-    <Container>
+    <Box large>
       <Content>
         <div>
           <Title>{title}</Title>
@@ -12,28 +14,9 @@ export default function Hero({ title, tagline, image }) {
         </div>
         <img src={image} alt="Coding" />
       </Content>
-    </Container>
+    </Box>
   )
 }
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  margin: 0 auto;
-  padding: 3rem 1rem;
-  color: ${({ theme }) => theme.colors.bg};
-  background-color: ${({ theme }) => theme.colors.fg};
-
-  @media screen and (min-width: 768px) {
-    width: calc(100% - 2rem);
-    height: 80vh;
-    padding: 0;
-    border-radius: 1.5rem;
-  }
-`
 
 const Content = styled.div`
   display: grid;

@@ -20,5 +20,5 @@ const Name = styled.h4`
 const Year = styled.span`
   display: block;
   font-weight: 300;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.secondary};
 `
