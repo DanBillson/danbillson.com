@@ -1,11 +1,11 @@
 ---
 title: Media
 body: This page probably isn't quite what you were expecting, it's not portfolio of any photography of graphic design but rather a list of the different type of media I have consumed over the year. The inspiration comes from one of my good friends and old colleague, Ben Farr.
-list: 
-  January: 
+list:
+  January:
     films:
-      - title: Soul 
-        info: (2020) 
+      - title: Soul
+        info: (2020)
         emoji: 🎷
       - title: Guardians of the Galaxy
         info: (2014)
@@ -19,12 +19,12 @@ list:
     games:
       - title: Taiko no Tatsujin
         info: Switch
-        emoji: 🥁 
+        emoji: 🥁
       - title: Ring Fit Adventure
         info: Switch
-        emoji: 💪 
-    books: 
-        title: Why the Dutch are different
-        info: - Ben Coates
+        emoji: 💪
+    books:
+      - title: Why the Dutch are different
+        info: '- Ben Coates'
         emoji: 🇳🇱
 ---
