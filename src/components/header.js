@@ -9,7 +9,8 @@ export default function Header() {
       </Link>
       <Link href="/">
         <Logo>
-          DanBillson<span>.</span>
+          D<Long>anBillson</Long>
+          <Highlight>.</Highlight>
         </Logo>
       </Link>
       <Link href="/cheer">
@@ -35,17 +36,21 @@ const Container = styled.header`
 `
 
 const Logo = styled.a`
-  margin: 0 1rem;
+  margin: 0 2rem;
   font-size: 2rem;
   font-weight: 700;
+`
 
-  span {
-    color: ${({ theme }) => theme.colors.primary};
-  }
+const Long = styled.span`
+  display: none;
 
   @media screen and (min-width: 768px) {
-    margin: 0 2rem;
+    display: inline;
   }
+`
+
+const Highlight = styled.span`
+  color: ${({ theme }) => theme.colors.primary};
 `
 
 const Anchor = styled.a`
