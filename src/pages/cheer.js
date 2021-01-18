@@ -3,17 +3,17 @@ import matter from 'gray-matter'
 import SEO from '../components/seo'
 import Header from '../components/header'
 import Heading from '../components/heading'
-import MediaList from '../components/mediaList'
+import VideoGrid from '../components/videoGrid'
 import Box from '../components/box'
 import Social from '../components/social'
 
-export default function Media({ list, ...props }) {
+export default function Media({ archive, ...props }) {
   return (
     <div>
       <SEO title={props.title} description={props.body} />
       <Header />
       <Heading {...props} />
-      <MediaList list={list} />
+      <VideoGrid videos={archive} />
       <Box>
         <Social />
       </Box>
@@ -22,8 +22,8 @@ export default function Media({ list, ...props }) {
 }
 
 export async function getStaticProps() {
-  const media = await import('../data/media.md')
-  const { data } = matter(media.default)
+  const cheer = await import('../data/cheer.md')
+  const { data } = matter(cheer.default)
 
   return {
     props: {

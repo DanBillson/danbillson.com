@@ -1,4 +1,6 @@
 ---
+title: Cheer Archive
+body: A small archive of some of my greatest achievments in cheerleading with the best teams and people in the country
 archive:
   - title: Ignite 2017
     team: Ignite

@@ -1,5 +1,6 @@
 import matter from 'gray-matter'
 
+import SEO from '../components/seo'
 import Header from '../components/header'
 import Hero from '../components/hero'
 import Grid from '../components/grid'
@@ -9,18 +10,21 @@ import Box from '../components/box'
 import Social from '../components/social'
 
 export default function Home(props) {
+  const { seo, professional, blog } = props
+
   return (
     <div>
+      <SEO {...seo} />
       <Header />
       <Hero {...props} />
       <Grid title="Professional">
-        {props.professional.map((job) => (
+        {professional.map((job) => (
           <Event key={job.name} {...job} />
         ))}
       </Grid>
       <Box>
         <Grid title="Blog">
-          {props.blog.map((preview) => (
+          {blog.map((preview) => (
             <Preview key={preview.title} {...preview} />
           ))}
         </Grid>
@@ -31,11 +35,16 @@ export default function Home(props) {
 }
 
 export async function getStaticProps() {
+  const config = await import('../data/config.json')
   const home = await import('../data/home.md')
   const { data } = matter(home.default)
 
   return {
     props: {
+      seo: {
+        title: config.title,
+        description: config.description,
+      },
       ...data,
     },
   }
