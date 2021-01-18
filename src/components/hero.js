@@ -8,7 +8,7 @@ export default function Hero({ title, tagline, image }) {
         <div>
           <Title>{title}</Title>
           <Tagline>{tagline}</Tagline>
-          <Social />
+          <Social header />
         </div>
         <img src={image} alt="Coding" />
       </Content>
@@ -21,15 +21,17 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 95%;
   height: 50vh;
   margin: 0 auto;
+  padding: 3rem 1rem;
   color: ${({ theme }) => theme.colors.bg};
   background-color: ${({ theme }) => theme.colors.fg};
-  border-radius: 1.5rem;
 
   @media screen and (min-width: 768px) {
+    width: calc(100% - 2rem);
     height: 80vh;
+    padding: 0;
+    border-radius: 1.5rem;
   }
 `
 
@@ -38,7 +40,6 @@ const Content = styled.div`
   align-items: center;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 3rem;
-  padding: 3rem;
   max-width: 1024px;
 
   img {
@@ -49,6 +50,7 @@ const Content = styled.div`
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
 
     img {
       display: block;

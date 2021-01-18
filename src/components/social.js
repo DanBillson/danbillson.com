@@ -23,9 +23,9 @@ const social = [
   },
 ]
 
-export default function Social() {
+export default function Social(props) {
   return (
-    <Container>
+    <Container {...props}>
       {social.map(({ icon, link }) => (
         <a key={link} href={link} target="_blank" rel="noopener noreferrer">
           {icon}
@@ -38,6 +38,7 @@ export default function Social() {
 const Container = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
 
   a {
     margin: 20px;
@@ -52,8 +53,16 @@ const Container = styled.div`
   }
 
   svg {
-    width: 50px;
+    width: 30px;
     fill: ${({ theme }) => theme.colors.bg};
     cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) {
+    ${({ header }) => (header ? `justify-content: flex-start;` : ``)}
+
+    svg {
+      width: 40px;
+    }
   }
 `

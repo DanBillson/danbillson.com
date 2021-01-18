@@ -35,12 +35,16 @@ const Container = styled.header`
 `
 
 const Logo = styled.a`
-  margin: 0 2rem;
+  margin: 0 1rem;
   font-size: 2rem;
   font-weight: 700;
 
   span {
     color: ${({ theme }) => theme.colors.primary};
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0 2rem;
   }
 `
 
