@@ -27,4 +27,18 @@ list:
       - title: Why the Dutch are different
         info: '- Ben Coates'
         emoji: 🇳🇱
+  February:
+    films:
+      - title: The Fast and the Furious
+        info: (2001)
+        emoji: 🚗
+    games:
+      - title: Hades
+        info: Switch
+        emoji: 🔥
+    anime:
+      - title: Sword Art Online
+        emoji: 🧚‍♀️
+      - title: Sword Art Online II
+        emoji: 🔫
 ---

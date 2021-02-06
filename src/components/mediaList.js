@@ -21,7 +21,7 @@ export default function Media({ list }) {
             <MediaGrid>
               {Object.entries(media).map(([category, films]) => (
                 <MediaGroup title={category}>
-                  {films.map(({ title, info, emoji }) => (
+                  {films?.map(({ title, info, emoji }) => (
                     <EmojiLi key={title} emoji={emoji}>
                       {title} <Info>{info}</Info>
                     </EmojiLi>
