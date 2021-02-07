@@ -35,6 +35,12 @@ list:
       - title: 2 Fast 2 Furious
         info: (2003)
         emoji: 🛥
+      - title: 'The Fast and the Furious: Tokyo Drift'
+        info: (2006)
+        emoji: 🔰
+      - title: Fast & Furious
+        info: (2009)
+        emoji: 🚚
     games:
       - title: Hades
         info: Switch
