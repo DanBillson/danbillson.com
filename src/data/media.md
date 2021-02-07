@@ -32,6 +32,9 @@ list:
       - title: The Fast and the Furious
         info: (2001)
         emoji: 🚗
+      - title: 2 Fast 2 Furious
+        info: (2003)
+        emoji: 🛥
     games:
       - title: Hades
         info: Switch
