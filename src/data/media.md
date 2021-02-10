@@ -40,7 +40,13 @@ list:
         emoji: 🔰
       - title: Fast & Furious
         info: (2009)
-        emoji: 🚚
+        emoji: 🌮
+      - title: Fast Five
+        info: (2011)
+        emoji: 💵
+      - title: Fast & Furious 6
+        info: (2013)
+        emoji: 🛬
     games:
       - title: Hades
         info: Switch
