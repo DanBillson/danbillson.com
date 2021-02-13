@@ -47,6 +47,12 @@ list:
       - title: Fast & Furious 6
         info: (2013)
         emoji: 🛬
+      - title: Furious 7
+        info: (2015)
+        emoji: 🌍
+      - title: The Fate of the Furious
+        info: (2017)
+        emoji: ❄️
     games:
       - title: Hades
         info: Switch
