@@ -53,6 +53,12 @@ list:
       - title: The Fate of the Furious
         info: (2017)
         emoji: ❄️
+      - title: Escape from Pretoria
+        info: (2020)
+        emoji: 🗝
+      - title: The Map of Tiny Perfect Things
+        info: (2021)
+        emoji: 🗺
     games:
       - title: Hades
         info: Switch
@@ -62,4 +68,6 @@ list:
         emoji: 🧚‍♀️
       - title: Sword Art Online II
         emoji: 🔫
+      - title: Erased
+        emoji: ⌛️
 ---
