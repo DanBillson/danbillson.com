@@ -16,11 +16,11 @@ export default function Media({ list }) {
     <Container>
       {Object.entries(list).map(([month, media]) => {
         return (
-          <MediaWrapper>
+          <MediaWrapper key={month}>
             <h4>{month}</h4>
             <MediaGrid>
               {Object.entries(media).map(([category, films]) => (
-                <MediaGroup title={category}>
+                <MediaGroup key={month + category} title={category}>
                   {films?.map(({ title, info, emoji }) => (
                     <EmojiLi key={title} emoji={emoji}>
                       {title} <Info>{info}</Info>
