@@ -70,4 +70,10 @@ list:
         emoji: 🔫
       - title: Erased
         emoji: ⌛️
+  March:
+    films:
+    books:
+    anime:
+      - title: 'Sword Art Online: Alicization'
+        emoji: 👨‍👨‍👧
 ---
