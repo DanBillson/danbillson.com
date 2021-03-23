@@ -2,6 +2,18 @@
 title: Media
 body: This page probably isn't quite what you were expecting, it's not portfolio of any photography of graphic design but rather a list of the different type of media I have consumed over the year. The inspiration comes from one of my good friends and old colleague, Ben Farr.
 list:
+  'In Progress':
+    anime:
+      - title: Hunter x Hunter
+        emoji: 🎣
+    games:
+      - title: 'Paper Mario: The Origami King'
+        info: Switch
+        emoji: 🍄
+    books:
+      - title: Minoes
+        info: '- Annie M. G. Schmidt'
+        emoji: 🐈‍⬛
   January:
     films:
       - title: Soul
@@ -71,9 +83,15 @@ list:
       - title: Erased
         emoji: ⌛️
   March:
-    films:
-    books:
-    anime:
+    series/anime:
+      - title: 'Formula 1: Drive to Survive'
+        info: (Season 3)
+        emoji: 🏎
       - title: 'Sword Art Online: Alicization'
         emoji: 👨‍👨‍👧
+    games:
+    books:
+      - title: Short stories in Dutch
+        info: '- Olly Richards'
+        emoji: 🚲
 ---
