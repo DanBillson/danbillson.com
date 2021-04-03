@@ -4,12 +4,12 @@ body: This page probably isn't quite what you were expecting, it's not portfolio
 list:
   'In Progress':
     anime:
-      - title: Hunter x Hunter
-        emoji: 🎣
+      - title: TBD
+        emoji: 😬
     games:
-      - title: 'Paper Mario: The Origami King'
+      - title: 'Super Mario 3D World'
         info: Switch
-        emoji: 🍄
+        emoji: 😸
     books:
       - title: Minoes
         info: '- Annie M. G. Schmidt'
@@ -89,9 +89,22 @@ list:
         emoji: 🏎
       - title: 'Sword Art Online: Alicization'
         emoji: 👨‍👨‍👧
+      - title: 'The Promised Neverland'
+        emoji: 🏫
     games:
+      - title: 'Paper Mario: The Origami King'
+        info: Switch
+        emoji: 🍄
     books:
       - title: Short stories in Dutch
         info: '- Olly Richards'
         emoji: 🚲
+  April:
+    films:
+      - title: 'The Lego Movie 2: The Second Part'
+        emoji: 👷‍♂️
+    games:
+    anime:
+      - title: Hunter x Hunter
+        emoji: 🎣
 ---
